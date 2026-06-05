@@ -191,11 +191,19 @@ export default function Portfolio() {
               repoUrl="https://github.com"
             />
             <ProjectCard
-              title="作品集网站"
-              description="使用 Next.js 和 Tailwind CSS 构建的本作品集网站。"
-              tags={["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"]}
+              title="平面海报--简约"
+              description="简约风格的平面海报设计"
+              tags={["平面海报", "简约风格", "商业海报"]}
               image="/project-dark.png"
-              demoUrl="#"
+              demoUrl="/poster"
+              repoUrl="https://github.com"
+            />
+            <ProjectCard
+              title="平面海报--简约"
+              description="简约风格的平面海报设计"
+              tags={["平面海报", "简约风格", "商业海报"]}
+              image="/project-dark.png"
+              demoUrl="/poster"
               repoUrl="https://github.com"
             />
           </div>

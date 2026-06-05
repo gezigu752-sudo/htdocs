@@ -73,7 +73,7 @@ export function ProjectCard({ title, description, tags, image, demoUrl, repoUrl 
             <h3 className="text-xl font-bold mb-2">{title}</h3>
             <p className="text-zinc-400 mb-4">{description}</p>
 
-            <div className="flex flex-wrap gap-2 mb-4">
+            <div className="flex flex-wrap gap-2 mb-4 min-h-[32px] items-center">
               {tags.map((tag, index) => (
                 <Badge key={index} variant="secondary" className="bg-zinc-700/50 hover:bg-zinc-700 text-zinc-300">
                   {tag}
