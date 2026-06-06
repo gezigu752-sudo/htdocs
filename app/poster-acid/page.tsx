@@ -8,52 +8,52 @@ import { ArrowLeft, X } from "lucide-react"
 const posters = [
   {
     id: 1,
-    title: "绯色月光",
-    description: "产品宣传海报",
-    image: "/11.png",
+    title: "毕业会展",
+    description: "酸性风格海报",
+    image: "/7.png",
   },
   {
     id: 2,
-    title: "杨梅采摘园",
-    description: "产品宣传海报",
-    image: "/2.png",
+    title: "潮玩市集",
+    description: "酸性风格海报",
+    image: "/8.png",
   },
   {
     id: 3,
-    title: "黑森林蛋糕",
-    description: "产品宣传海报",
+    title: "酸性设计示例3",
+    description: "酸性风格海报",
     image: "/3.png",
   },
   {
     id: 4,
-    title: "AI科技艺术展",
-    description: "会展宣传海报",
+    title: "酸性设计示例4",
+    description: "酸性风格海报",
     image: "/4.png",
   },
   {
     id: 5,
-    title: "街舞教学班",
-    description: "教学班宣传海报",
+    title: "酸性设计示例5",
+    description: "酸性风格海报",
     image: "/5.png",
   },
   {
     id: 6,
-    title: "草莓奶油拿破仑",
-    description: "产品宣传海报",
+    title: "酸性设计示例6",
+    description: "酸性风格海报",
     image: "/6.png",
   },
 ]
 
-export default function PosterPage() {
+export default function PosterAcidPage() {
   const [selectedPoster, setSelectedPoster] = useState<typeof posters[0] | null>(null)
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-zinc-900 via-zinc-900 to-black text-white overflow-hidden">
-      {/* Background Effects */}
+      {/* Background Effects - Acid Style */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-        <div className="absolute top-40 right-10 w-72 h-72 bg-yellow-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-20 left-1/3 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-lime-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div className="absolute top-40 right-10 w-72 h-72 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+        <div className="absolute bottom-20 left-1/3 w-72 h-72 bg-yellow-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
 
       {/* Content */}
@@ -68,11 +68,11 @@ export default function PosterPage() {
 
         {/* Title */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
-            平面海报--简约
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-lime-400 via-cyan-400 to-yellow-400">
+            平面海报--酸性
           </h1>
           <p className="text-xl text-zinc-400">
-            简约而不简单，用最少的元素传达最深刻的信息
+            高饱和度色彩与液态金属质感，打造未来感视觉体验
           </p>
         </div>
 
@@ -82,7 +82,7 @@ export default function PosterPage() {
             <div
               key={poster.id}
               onClick={() => poster.image && setSelectedPoster(poster)}
-              className={`group relative aspect-[3/4] rounded-2xl overflow-hidden bg-gradient-to-br from-zinc-800 to-zinc-900 border border-white/10 hover:border-purple-500/50 transition-all duration-300 ${poster.image ? 'cursor-pointer' : ''}`}
+              className={`group relative aspect-[3/4] rounded-2xl overflow-hidden bg-gradient-to-br from-zinc-800 to-zinc-900 border border-white/10 hover:border-lime-500/50 transition-all duration-300 ${poster.image ? 'cursor-pointer' : ''}`}
             >
               {poster.image ? (
                 <>
@@ -100,30 +100,6 @@ export default function PosterPage() {
               ) : (
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center p-8">
-                    {poster.placeholder === "square" && (
-                      <div className="w-24 h-24 mx-auto mb-6 border-4 border-white/80 rotate-45"></div>
-                    )}
-                    {poster.placeholder === "text" && (
-                      <div className="text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">Aa</div>
-                    )}
-                    {poster.placeholder === "colors" && (
-                      <div className="flex gap-2 justify-center mb-6">
-                        <div className="w-8 h-8 rounded-full bg-purple-500"></div>
-                        <div className="w-8 h-8 rounded-full bg-pink-500"></div>
-                        <div className="w-8 h-8 rounded-full bg-yellow-500"></div>
-                      </div>
-                    )}
-                    {poster.placeholder === "line" && (
-                      <div className="w-1 h-32 mx-auto mb-6 bg-gradient-to-b from-purple-500 to-pink-500"></div>
-                    )}
-                    {poster.placeholder === "grid" && (
-                      <div className="grid grid-cols-2 gap-2 mb-6 w-16 h-16 mx-auto">
-                        <div className="bg-white/80"></div>
-                        <div className="bg-white/40"></div>
-                        <div className="bg-white/20"></div>
-                        <div className="bg-white/60"></div>
-                      </div>
-                    )}
                     <h3 className="text-2xl font-bold mb-2">{poster.title}</h3>
                     <p className="text-zinc-400 text-sm">{poster.description}</p>
                   </div>
@@ -137,8 +113,8 @@ export default function PosterPage() {
         <div className="mt-20 max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">设计理念</h2>
           <p className="text-zinc-400 leading-relaxed">
-            简约设计不是简单的删减，而是在繁复中寻找本质。每一个元素都经过精心考量，
-            每一处留白都承载着意义。通过极简的视觉语言，传达最纯粹的设计美学。
+            酸性设计（Acid Design）源自90年代锐舞文化，以高饱和度的荧光色、液态金属质感、
+            几何图形和扭曲变形为特点，营造出迷幻、未来感的视觉体验。
           </p>
         </div>
       </div>

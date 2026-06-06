@@ -199,11 +199,11 @@ export default function Portfolio() {
               repoUrl="https://github.com"
             />
             <ProjectCard
-              title="平面海报--简约"
-              description="简约风格的平面海报设计"
-              tags={["平面海报", "简约风格", "商业海报"]}
+              title="平面海报--酸性"
+              description="酸性风格的平面海报设计"
+              tags={["平面海报", "酸性风格", "商业海报"]}
               image="/project-dark.png"
-              demoUrl="/poster"
+              demoUrl="/poster-acid"
               repoUrl="https://github.com"
             />
           </div>
