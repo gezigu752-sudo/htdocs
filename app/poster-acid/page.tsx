@@ -18,30 +18,6 @@ const posters = [
     description: "酸性风格海报",
     image: "/8.png",
   },
-  {
-    id: 3,
-    title: "酸性设计示例3",
-    description: "酸性风格海报",
-    image: "/3.png",
-  },
-  {
-    id: 4,
-    title: "酸性设计示例4",
-    description: "酸性风格海报",
-    image: "/4.png",
-  },
-  {
-    id: 5,
-    title: "酸性设计示例5",
-    description: "酸性风格海报",
-    image: "/5.png",
-  },
-  {
-    id: 6,
-    title: "酸性设计示例6",
-    description: "酸性风格海报",
-    image: "/6.png",
-  },
 ]
 
 export default function PosterAcidPage() {
