@@ -206,6 +206,14 @@ export default function Portfolio() {
               demoUrl="/poster-acid"
               repoUrl="https://github.com"
             />
+            <ProjectCard
+              title="动态图形设计"
+              description="动态视觉与运动图形设计"
+              tags={["动态图形", "Motion Design", "视觉设计"]}
+              image="/project-dark.png"
+              demoUrl="/motion"
+              repoUrl="https://github.com"
+            />
           </div>
         </div>
       </section>
